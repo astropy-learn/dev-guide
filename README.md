@@ -34,7 +34,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      2_applying-model-to-data
      ```
      
-   e)  If this is a book, the file _index.md_ is added. This file will be the book's first page and summarizes its (individual notebook) contents.
+   e)  If this is a book, the file _index.md_ is updated. This file will be the book's first page and summarizes its (individual notebook) contents.
    
 2) The tutorial is reviewed.
    
