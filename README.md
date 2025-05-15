@@ -25,11 +25,13 @@ This README describes how the _astropy-learn_ organization is designed, how it f
       source: "tutorial--user-defined-model"
      ```
    c)  _requirements.txt_ is updated with Python requirements for the notebook (or the set of notebooks if this is a book).
+   
    d)  The .ipynb notebooks are added to the top-level directory. If this is a book, their filenames should be preceded by a number and an underscore, in the order they should appear in the book (starting with 1), e.g.:
      ```
      1_intro-to-modeling
      2_applying-model-to-data
      ```
+     
    e)  If this is a book, the file _index.md_ should be added. This file will be the book's first page and should summarize its (individual notebook) contents.
    
 3) The tutorial is reviewed.
