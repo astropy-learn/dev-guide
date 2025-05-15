@@ -12,7 +12,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 ### How the repos interact
 
 ## Steps to add a new tutorial
-1) A new tutorial (or a collection of tutorials as a Jupyter 'book') is proposed as a pull request to _tutorial--template_. The PR emulates the file structure of the repo's main branch, with the following changes:
+1) A new tutorial (or a collection of tutorials as a Jupyter 'book') is proposed as a pull request to _tutorial--template_. The PR emulates the file structure of the repo's main branch, with the following changes made by the PR author:
 
    a)  _AUTHORS.md_ is updated with a comma-separated list of author names and GitHub usernames, e.g.:
      ```
@@ -32,12 +32,12 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      2_applying-model-to-data
      ```
      
-   e)  If this is a book, the file _index.md_ is be added. This file will be the book's first page and summarizes its (individual notebook) contents.
+   e)  If this is a book, the file _index.md_ is added. This file will be the book's first page and summarizes its (individual notebook) contents.
    
-3) The tutorial is reviewed.
+2) The tutorial is reviewed.
    
-4) Once approved, the tutorial is copied to a new repo with the name _tutorial--TUTORIAL-NAME_.
+3) Once approved, the tutorial is copied to a new repo with the name _tutorial--TUTORIAL-NAME_.
    
-5) The PR in _tutorial--template_ is closed (not merged).
+4) The PR in _tutorial--template_ is closed (not merged).
 
-6) The newly created repo's workflow _build.yml_ will build the notebook for deployment to the site.
+5) The newly created repo's workflow _build.yml_ will build the notebook for deployment to the site.
