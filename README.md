@@ -12,4 +12,4 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 ### How the repos interact
 
 ## Steps to add a new tutorial
-New tutorials should be proposed as a pull request to _tutorial--template_. Once a tutorial is reviewed and approved, it should be copied to a new repo _tutorial--<tutorial name>_, and the PR closed (not merged).
+New tutorials should be proposed as a pull request to _tutorial--template_. Once a tutorial is reviewed and approved, it should be copied to a new repo with the name _tutorial--TUTORIAL-NAME_, and the PR in _tutorial--template_ should be closed (not merged).
