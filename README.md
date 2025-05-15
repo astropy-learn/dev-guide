@@ -12,7 +12,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 ### How the repos interact
 
 ## Steps to add a new tutorial
-1) A new tutorial (or a collection of tutorials as a Jupyter 'book') is proposed as a pull request to _tutorial--template_. The PR should emulate the file structure of the repo's main branch, with the following changes:
+1) A new tutorial (or a collection of tutorials as a Jupyter 'book') is proposed as a pull request to _tutorial--template_. The PR emulates the file structure of the repo's main branch, with the following changes:
 
    a)  _AUTHORS.md_ is updated with a comma-separated list of author names and GitHub usernames, e.g.:
      ```
@@ -26,13 +26,13 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      ```
    c)  _requirements.txt_ is updated with Python requirements for the notebook (or the set of notebooks if this is a book).
    
-   d)  The .ipynb notebooks are added to the top-level directory. If this is a book, their filenames should be preceded by a number and an underscore, in the order they should appear in the book (starting with 1), e.g.:
+   d)  The .ipynb notebooks are added to the top-level directory. If this is a book, their filenames are preceded by a number and an underscore, in the order they should appear in the book (starting with 1), e.g.:
      ```
      1_intro-to-modeling
      2_applying-model-to-data
      ```
      
-   e)  If this is a book, the file _index.md_ should be added. This file will be the book's first page and should summarize its (individual notebook) contents.
+   e)  If this is a book, the file _index.md_ is be added. This file will be the book's first page and summarizes its (individual notebook) contents.
    
 3) The tutorial is reviewed.
    
