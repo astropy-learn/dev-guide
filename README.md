@@ -5,9 +5,9 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 ## Design
 ### Repos
 - _action--execute-convert_: a custom GitHub action that builds (executes and converts to html and pdf) a given notebook.
-- _learn_astropy_: hosts the website homepage (https://learn.astropy.org) serves the rendered notebooks to the site.
-- _action--pre-process_: a custom GitHub action that populates a configuration script needed to build a given notebook.
+- _action--pre-process_: a custom GitHub action that populates the [configuration script](https://github.com/astropy-learn/astropy-tutorials/blob/main/scripts/_config.yml) used by Jupyter Book to build a given notebook.
 - _astropy-tutorials_: its _scripts_ directory contains .py and .yml scripts used in custom GitHub actions to build the notebooks. Any organization-wide issues should be opened here.
+- _learn-astropy_: hosts the website homepage (https://learn.astropy.org) and serves the rendered (HTML) notebooks to the site.
 - _tutorial--template_: a template repo for new tutorials. 
 - _tutorial--*_: each tutorial (or book) is its own repo, emulating the _tutorial--template_ file structure. 
 
