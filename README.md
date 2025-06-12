@@ -29,9 +29,9 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      2_applying-model-to-data
      ```
      
-   e)  If this is a book, _index.md_ should not be empty; it will be the book's first page and should summarize the contents of the individual notebooks. If this is a single notebook rather than a book, the file should be empty.
+   d)  If this is a book, _index.md_ should not be empty; it will be the book's first page and should summarize the contents of the individual notebooks. If this is a single notebook rather than a book, the file should be empty.
 
-   f)  Include any data files needed by the notebook, if their file size is <~ 1 MB. If they are larger, do not include them, and instead ensure they are correctly linked in the notebook per the [contribution guide](https://learn.astropy.org/contributing/). This will either require a PR merge with the data file(s) in the https://github.com/astropy/astropy-data repo (the data should be at `http://data.astropy.org/tutorials/TUTORIAL-NAME/`, and a variable like `tutorialpath` in the notebook should correspond to this), or the author should've uploaded the data files to Zenodo. If the author included large files in a commit of their PR to the [tutorial--template repo](https://github.com/astropy-learn/tutorial--template), you can strip them out via `git rebase -i`, deleting the commits that include the data files.
+   e)  Include any data files needed by the notebook, if their file size is <~ 1 MB. If they are larger, do not include them, and instead ensure they are correctly linked in the notebook per the [contribution guide](https://learn.astropy.org/contributing/). This will either require a PR merge with the data file(s) in the https://github.com/astropy/astropy-data repo (the data should be at `http://data.astropy.org/tutorials/TUTORIAL-NAME/`, and a variable like `tutorialpath` in the notebook should correspond to this), or the author should've uploaded the data files to Zenodo. If the author included large files in a commit of their PR to the [tutorial--template repo](https://github.com/astropy-learn/tutorial--template), you can strip them out via `git rebase -i`, deleting the commits that include the data files.
 
 2) Additionally, always do the following:
 
