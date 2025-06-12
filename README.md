@@ -41,6 +41,8 @@ This README describes how the _astropy-learn_ organization is designed, how it f
       slug: "User-Defined-Model"
       source: "tutorial--user-defined-model"
      ```
+
+    b)  Ensure the notebook's first cell has the format specified in the [contribution guide](https://learn.astropy.org/contributing/) and that the headers in that cell have no typos (they're used to find metadata like keywords that are displayed on the site).
    
 3) Next, review the PR with the tutorial, but don't merge it.
    
