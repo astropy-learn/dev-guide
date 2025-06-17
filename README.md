@@ -53,4 +53,8 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 
     b)  Ensure the notebook's first cell has the format specified in the [contribution guide](https://learn.astropy.org/contributing/) and that the headers in that cell have no typos (they're used to find metadata like keywords that are displayed on the site).
    
-3) Next, review the PR with the tutorial. Once merged, the new repo's _build.yml_ workflow will build the notebook for deployment to the site. The workflow can also be manually triggered. The issue in [astropy-tutorials](https://github.com/astropy-learn/astropy-tutorials) can be closed.
+3) Next, review the PR with the tutorial. Once merged, the new repo's _build.yml_ workflow will build the notebook for deployment to the site. The workflow can also be manually triggered. Finally:
+
+  a)  Add a badge for the notebook's 'build' workflow to the [astropy-tutorials README](https://github.com/astropy-learn/astropy-tutorials/blob/main/README.md) - copy the text there for an existing badge and update it with the new repo name in the appropriate parts.
+  
+  b)  The issue in [astropy-tutorials](https://github.com/astropy-learn/astropy-tutorials) can be closed.
