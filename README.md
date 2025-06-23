@@ -8,8 +8,8 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 - _action--pre-process_: a custom GitHub action that populates the [configuration script](https://github.com/astropy-learn/astropy-tutorials/blob/main/_config.yml) used by Jupyter Book to build a given notebook.
 - _astropy-tutorials_: its _scripts_ directory contains .py and .yml scripts used in custom GitHub actions to build the notebooks. Any organization-wide issues should be opened here.
 - _learn-astropy_: hosts the website homepage (https://learn.astropy.org) and serves the rendered (HTML) notebooks to the site.
-- _tutorial--template_: a template repo for new tutorials. 
-- _tutorial--*_: each tutorial (or book) is its own repo, emulating the _tutorial--template_ file structure. 
+- _tutorial--template_: a template repo for new tutorials.
+- _tutorial--*_: each tutorial (or book) is its own repo, emulating the _tutorial--template_ file structure.
 
 ### How the repos interact
 
@@ -22,7 +22,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      ```
 
    b)  Update _requirements.txt_ with Python requirements for the notebook (or the set of notebooks if this is a book).
-   
+
    c)  Add the .ipynb notebook(s) to the top-level directory. If this is a book, their filenames should be preceded by a number and an underscore, in the order they should appear in the book (starting with 1), e.g.:
      ```
      1_intro-to-modeling
@@ -31,10 +31,10 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 
    d)  If this is a book, _index.md_ should be renamed, for example _index-modeling.md_, and it should consist of text summarizing the contents of the individual notebooks. It will be the fist page of the book. If this is a single notebook rather than a book, the file should be left as _index.md_ and should be empty.
 
-   e) If this is a book, _\_toc.yml_ should not be empty; it will be the book's table of contents and should have the below format. If this is a single notebook rather than a book, the file should be empty. 
+   e) If this is a book, _\_toc.yml_ should not be empty; it will be the book's table of contents and should have the below format. If this is a single notebook rather than a book, the file should be empty.
    ```
    format: jb-book
-   root: index
+   root: index-modeling
    chapters:
    - file: 1_intro-to-modeling
    - file: 2_applying-model-to-data
@@ -52,7 +52,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      ```
 
     b)  Ensure the notebook's first cell has the format specified in the [contribution guide](https://learn.astropy.org/contributing/) and that the headers in that cell have no typos (they're used to find metadata like keywords that are displayed on the site).
-   
+
 3) Next, review the PR with the tutorial. Once merged, the new repo's _build.yml_ workflow will build the notebook for deployment to the site. The workflow can also be manually triggered. Finally:
 
   a)  Add a badge for the notebook's 'build' workflow to the [astropy-tutorials README](https://github.com/astropy-learn/astropy-tutorials/blob/main/README.md) - copy the text there for an existing badge and update it with the new repo name in the appropriate parts.
