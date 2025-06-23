@@ -29,7 +29,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      2_applying-model-to-data
      ```
 
-   d)  If this is a book, _index.md_ should not be empty; it will be the book's first page and should summarize the contents of the individual notebooks. If this is a single notebook rather than a book, the file should be empty.
+   d)  If this is a book, _index.md_ should be renamed, for example _index-modeling.md_, and it should consist of text summarizing the contents of the individual notebooks. It will be the fist page of the book. If this is a single notebook rather than a book, the file should be left as _index.md_ and should be empty.
 
    e) If this is a book, _\_toc.yml_ should not be empty; it will be the book's table of contents and should have the below format. If this is a single notebook rather than a book, the file should be empty. 
    ```
@@ -56,5 +56,5 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 3) Next, review the PR with the tutorial. Once merged, the new repo's _build.yml_ workflow will build the notebook for deployment to the site. The workflow can also be manually triggered. Finally:
 
   a)  Add a badge for the notebook's 'build' workflow to the [astropy-tutorials README](https://github.com/astropy-learn/astropy-tutorials/blob/main/README.md) - copy the text there for an existing badge and update it with the new repo name in the appropriate parts.
-  
+
   b)  The issue in [astropy-tutorials](https://github.com/astropy-learn/astropy-tutorials) can be closed.
