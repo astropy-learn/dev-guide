@@ -29,7 +29,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
      2_applying-model-to-data
      ```
 
-   d)  If this is a book, _index.md_ should be renamed, for example _index-modeling.md_, and it should consist of text summarizing the contents of the individual notebooks. It will be the fist page of the book. If this is a single notebook rather than a book, the file should be left as _index.md_ and should be empty.
+   d)  If this is a book, _index.md_ should be renamed _index-NAME.md_, for example _index-models.md_, and it should consist of text summarizing the contents of the individual notebooks. It will be the fist page of the book. If this is a single notebook rather than a book, the file should be left as _index.md_ and should be empty.
 
    e) If this is a book, _\_toc.yml_ should not be empty; it will be the book's table of contents and should have the below format. If this is a single notebook rather than a book, the file should be empty.
    ```
