@@ -11,6 +11,11 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 - _action--pre-process_: a custom GitHub action that populates the [configuration script](https://github.com/astropy-learn/astropy-tutorials/blob/main/_config.yml) used by Jupyter Book to build a given notebook.
 - _astropy-tutorials_: its _scripts_ directory contains .py and .yml scripts used in custom GitHub actions to build the notebooks. Any organization-wide issues should be opened here.
 - _learn-astropy_: hosts the website homepage (https://learn.astropy.org) and serves the rendered (HTML) notebooks to the site.
+  - workflows/deploy.yml: 
+    - pulls the tutorials from the converted branches
+    - uses astropy-librarian repo to do the indexing,
+    - calls deployment/installtutorials.py to organize the relevant files
+    - deploys to github pages 
 - _tutorial--template_: a template repo for new tutorials.
 - _tutorial--*_: each tutorial (or book) is its own repo, emulating the _tutorial--template_ file structure.
 
