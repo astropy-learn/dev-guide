@@ -9,7 +9,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
    - Uses astropy-tutorials/scripts/execute-convert.py
    - Puts the html and PDFs into the converted branch of each repo.
 - _action--pre-process_: a custom GitHub action that populates the [configuration script](https://github.com/astropy-learn/astropy-tutorials/blob/main/_config.yml) used by Jupyter Book to build a given notebook.
-- _astropy-tutorials_: its _scripts_ directory contains .py and .yml scripts used in custom GitHub actions to build the notebooks. Any organization-wide issues should be opened here.
+- _astropy-tutorials_: its _scripts_ directory contains .py and .yml scripts used in custom GitHub actions (execute-convert and pre-process) to build the notebooks. Any organization-wide issues should be opened here.
 - _learn-astropy_: hosts the website homepage (https://learn.astropy.org) and serves the rendered (HTML) notebooks to the site.
   - workflows/deploy.yml:
     - pulls the tutorials from the converted branches
