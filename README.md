@@ -4,7 +4,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 
 ## Design
 ### Repos
-- _action--execute-convert_: a custom GitHub action that builds (executes and converts to html and pdf) a given notebook.
+- _action--execute-convert_: a custom GitHub action that builds (executes and converts to HTML) a given notebook.
 - _action--pre-process_: a custom GitHub action that populates the [configuration script](https://github.com/astropy-learn/astropy-tutorials/blob/main/_config.yml) used by Jupyter Book to build a given notebook.
 - _astropy-tutorials_: **Any organization-wide issues should be opened in this repo.** This repo also holds material used across all tutorials, including:
     - [Python scripts](https://github.com/astropy-learn/astropy-tutorials/tree/main/scripts) used in the above custom GitHub actions to build the notebooks,
@@ -19,7 +19,7 @@ This README describes how the _astropy-learn_ organization is designed, how it f
 ### How the repos interact
 Within a _tutorial--*_ repo, when the [build.yml file](https://github.com/astropy-learn/tutorial--template/blob/main/.github/workflows/build.yml) is triggered, _action--pre-process_ is called to populate the Jupyter Book config script for that notebook. _action--pre-process_ runs the [associated Python script](https://github.com/astropy-learn/astropy-tutorials/blob/main/scripts/pre-process.py) kept in the _astropy-tutorials_ repo. 
 
-Then, the _build.yml_ workflow calls _action--execute-convert_ (which runs the [associated Python script](https://github.com/astropy-learn/astropy-tutorials/blob/main/scripts/execute-convert.py) kept in the _astropy-tutorials_ repo) to build the _.ipynb_ notebook into _.html_ (and _.pdf_). This step determines if a single tutorial page or a Jupyter Book 'book' (collection of notebooks) should be built, as checked in the Python script. The Jupyter Book HTML build outputs are pushed to the _converted_ branch in the tutorial repo.
+Then, the _build.yml_ workflow calls _action--execute-convert_ (which runs the [associated Python script](https://github.com/astropy-learn/astropy-tutorials/blob/main/scripts/execute-convert.py) kept in the _astropy-tutorials_ repo) to build the _.ipynb_ notebook into _.html_. This step determines if a single tutorial page or a Jupyter Book 'book' (collection of notebooks) should be built, as checked in the Python script. The Jupyter Book HTML build outputs are pushed to the _converted_ branch in the tutorial repo.
 
 Rendered content is deployed to the website by the _learn-astropy_ repo's [deploy.yaml workflow](https://github.com/astropy-learn/learn-astropy/blob/main/.github/workflows/deploy.yaml). The Gatsby site is built, and using a [Python script](https://github.com/astropy-learn/learn-astropy/blob/main/deployment/installtutorials.py) the HTML output of each tutorial is collected from its respective _converted_ branch in its repo and installed into the Gatsby site. The tutorials are then indexed for Algolia using [learn-astropy-librarian](https://github.com/astropy-learn/learn-astropy-librarian/tree/main). The site is deployed to the GitHub pages site for the _learn-astropy_ repo, and this is served to the custom domain [learn.astropy.org](https://learn.astropy.org/) (see the corresponding [DNS settings](https://github.com/astropy-learn/learn-astropy/settings/pages); elevated permissions are required to view).
 
